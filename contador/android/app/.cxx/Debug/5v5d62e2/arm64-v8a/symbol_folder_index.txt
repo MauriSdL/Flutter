@@ -1,0 +1,1 @@
+/home/mauri/Documentos/GitHub/Flutter/contador/build/app/intermediates/cxx/Debug/5v5d62e2/obj/arm64-v8a
