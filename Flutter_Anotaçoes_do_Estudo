@@ -1,0 +1,42 @@
+
+Comandos flutter para vscode
+Mostra os tipo de dispositivos que irao rodar o seu codigo:
+flutter devices
+ex: Linux (desktop) – Ou seja, você pode rodar o app Flutter diretamente no seu ambiente de desktop.
+	Chrome (web) – Permite rodar seu app Flutter como uma aplicação web no navegador Chrome.
+
+
+Celular conectado via USB
+Verificar se o Celular foi reconhecido e esta conectado ao pc:
+adb devices
+
+Se não aparecer, pode ser necessário instalar o adb:
+sudo apt install adb
+
+
+Se o dispositivo estiver “offline” no adb devices, tente:
+adb kill-server
+adb start-server
+
+
+Dispositivos disponíveis, incluindo emuladores.
+Se o emulador não aparecer, inicie o Android Studio e abra o AVD Manager
+flutter devices
+
+
+Inicie o emulador manualmente (se necessário)
+Comando usado: emulator -avd NomeDoEmulador
+emulator -avd Redmi_Note_9_Pro_Emulador
+emulator -avd Pixel 4 API 31
+emulator -avd Pixel_3a_API_34_extension_level_7_x86_64
+emulator -avd Nexus_5_Leve
+emulator -avd RedmiNote9Proleve
+
+Rode o app Flutter no emulador
+flutter run
+
+
+Ativar Hot Reload (Opcional)
+Se quiser ver as alterações em tempo real sem reiniciar o app, use:
+r (para recarregar o código no terminal)
+R (para reiniciar completamente)
